@@ -1,0 +1,58 @@
+﻿<Window x:Class="Prac3.Administration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac3"
+        mc:Ignorable="d"
+        Title="Administration" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" Width="800">
+        <Label Content="Введіть пароль адміністратора" FontSize="14" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name ="AdminPasswd" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="252" Height="26"/>
+        <Button Name ="AutorBtn" Content="Авторизуватись" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="21" Width="252" Click="AutorBtn_Click"/>
+        <DataGrid Name ="dataGrid" Margin="10,124,538,30"/>
+        <Label Content="Зміна пароля адміністратора"  FontSize="14" HorizontalAlignment="Left" Margin="440,9,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введіть поточний пароль" FontSize="14" HorizontalAlignment="Left" Margin="289,36,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name ="RealAdminPasswd" HorizontalAlignment="Left" Margin="289,67,0,0" VerticalAlignment="Top" Width="216" Height="26"/>
+        <Label Content="Перегляд користувачів списком" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введіть новий пароль" FontSize="14" HorizontalAlignment="Left" Margin="549,36,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name ="NewAdminPasswd" HorizontalAlignment="Left" Margin="549,67,0,0" VerticalAlignment="Top" Width="210" Height="26"/>
+        <Label Content="Повторіть пароль" FontSize="14" HorizontalAlignment="Left" Margin="290,105,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name ="NewAdminPasswd2" HorizontalAlignment="Left" Margin="426,106,0,0" VerticalAlignment="Top" Width="210" Height="26"/>
+        <Button Name = "UpdatePasswd" Click="UpdatePasswd_Click" Content="Оновити" HorizontalAlignment="Left" Margin="674,105,0,0" VerticalAlignment="Top" Width="85" Height="27"/>
+        <Label Content="Перегляд кожного користувача"  HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="222"/>
+        <Label Content="Ім'я користувача"  HorizontalAlignment="Left" Margin="290,171,0,0" VerticalAlignment="Top" Width="119" Height="30"/>
+        <Label Name ="UserNameSelected" Content="" HorizontalAlignment="Left"   Margin="448,171,0,0" VerticalAlignment="Top" Height="30" Width="133"/>
+        <Label Content="Прізвище користувача"  HorizontalAlignment="Left" Margin="289,206,0,0" VerticalAlignment="Top" Width="159" Height="30"/>
+        <Label Name ="UserSurnameSelected" Content="" HorizontalAlignment="Left"   Margin="448,206,0,0" VerticalAlignment="Top" Height="30" Width="132"/>
+        <Label Content="Логін" HorizontalAlignment="Left"   Margin="586,171,0,0" VerticalAlignment="Top" Height="30"/>
+        <Label Content="Статус" HorizontalAlignment="Left"   Margin="585,206,0,0" VerticalAlignment="Top" Height="30"/>
+        <Label Name ="UserLoginSelected" Content="" HorizontalAlignment="Left"   Margin="641,171,0,0" VerticalAlignment="Top" Height="30" Width="133"/>
+        <Label Name = "UserStatusSelected" Content="" HorizontalAlignment="Left"   Margin="641,206,0,0" VerticalAlignment="Top" Height="30" Width="133"/>
+        <Button Name = "Prev" Click="Prev_Click" Content="Попередній" HorizontalAlignment="Left" Margin="290,248,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="Обмеження на пароль" HorizontalAlignment="Left" Margin="389,248,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label Name ="UserRestrictionSelected" Content="" HorizontalAlignment="Left" Margin="538,248,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.163"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Name ="Next" Click="Next_Click" Content="Наступний" HorizontalAlignment="Left" Margin="689,248,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <Label Content="Додавання користувача" HorizontalAlignment="Left" Margin="290,279,0,0" VerticalAlignment="Top"/>
+        <TextBox Name ="AddingUserLogin" HorizontalAlignment="Left" Margin="292,319,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Height="24"/>
+        <Button Name ="AddUser" Click="AddUser_Click" Content="Додати користувача" HorizontalAlignment="Left" Margin="293,348,0,0" VerticalAlignment="Top" Height="25" Width="137"/>
+        <Button Name ="ExitFromSystem" Content="Вийти з системи" Click="ExitFromSystem_Click" HorizontalAlignment="Left" Margin="293,378,0,0" VerticalAlignment="Top" Height="26" Width="137"/>
+        <Button Name ="CloseWindow" Content="Закрити вікно" HorizontalAlignment="Left" Margin="493,378,0,0" VerticalAlignment="Top" Height="26" Width="281" Click="CloseWindow_Click"/>
+        <Label Content="Користувач" HorizontalAlignment="Left" Margin="494,279,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Name = "CorrectStatusBtn" Click="CorrectStatusBtn_Click" Content="Встановити активність" HorizontalAlignment="Left" Margin="641,319,0,0" VerticalAlignment="Top" Width="134" Height="24"/>
+        <Button Name = "CorrectRestrictionBtn" Click="CorrectRestrictionBtn_Click" Content="Встановити" HorizontalAlignment="Left" Margin="674,348,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <ComboBox Name ="UsersLogins" HorizontalAlignment="Left" Margin="616,279,0,0" VerticalAlignment="Top" Width="158" Height="26" SelectionChanged="UsersLogins_SelectionChanged"/>
+        <CheckBox Name ="ChangeActive" Content="Активність" HorizontalAlignment="Left" Margin="513,319,0,0" VerticalAlignment="Top" Height="24" Width="83"/>
+        <CheckBox Name ="ChangeRestriction" Content="Обмеження на пароль" HorizontalAlignment="Left" Margin="514,348,0,0" VerticalAlignment="Top" Height="25" Width="146"/>
+
+    </Grid>
+</Window>
