@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lab4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <DataGrid Name ="outputGrid" Margin="10,27,465,242"/>
+        <DataGrid Name ="alpinistGrid" Margin="340,27,239,242"/>
+        <DataGrid Name ="mountainGrid" Margin="569,27,10,242"/>
+        <Label Content="Output Grid" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top"/>
+        <Label Content="List of alpinists" HorizontalAlignment="Left" Margin="340,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="List of mountains" HorizontalAlignment="Left" Margin="569,1,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name ="groupGrid" Margin="569,247,10,22"/>
+        <Label Content="List of groups" HorizontalAlignment="Left" Margin="479,247,0,0" VerticalAlignment="Top"/>
+        <Button Content="Find groups" HorizontalAlignment="Left" Margin="31,427,0,0" VerticalAlignment="Top" Height="22" Width="106" Click="Button_Click_1"/>
+        <TextBox Name ="MountainBox"  HorizontalAlignment="Left" Margin="31,397,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="23"/>
+        <TextBox Name ="startDateBox" HorizontalAlignment="Left" Margin="31,281,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="23"/>
+        <TextBox x:Name ="endDateBox" HorizontalAlignment="Left" Margin="31,309,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Button Content="Find alpinists" HorizontalAlignment="Left" Margin="31,337,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click"/>
+        <Label Content="Example: 2022-07-05" HorizontalAlignment="Left" Margin="33,247,0,0" VerticalAlignment="Top"/>
+        <Button Content="Find ascends" HorizontalAlignment="Left" Margin="142,427,0,0" VerticalAlignment="Top" Height="22" Width="100" Click="Button_Click_2"/>
+        <TextBox Name ="personBox" HorizontalAlignment="Left" Margin="142,397,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button Content="Find groups" HorizontalAlignment="Left" Margin="125,337,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_3"/>
+    </Grid>
+</Window>
