@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddPersonWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AscendInMountain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AscendWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GroupAlpWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GroupInAscend.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MountainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PersonInGroupWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddPersonWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AscendInMountain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AscendWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GroupAlpWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GroupInAscend.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MountainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PersonInGroupWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
